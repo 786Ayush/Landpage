@@ -18,7 +18,7 @@ export default function RaiseRequest() {
   const [toastMessage, setToastMessage] = useState("");
 
   // Handle input changes
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { id, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -27,7 +27,7 @@ export default function RaiseRequest() {
   };
 
   // Form submission handler
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Basic validation: check required fields (name, email, phone)
