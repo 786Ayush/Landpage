@@ -1,4 +1,4 @@
-```markdown
+
 # 🏠 Next.js Assignment – Homepage Project
 
 This is a **Next.js** project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). It includes a fully designed and developed **Homepage** as part of an assignment.
@@ -60,11 +60,12 @@ npm start
 
 Deploy the project using [Vercel](https://vercel.com/new).
 
+## Deployed URL
+
+[Landpage](https://assignment1-upm3.vercel.app/)
+
 ## 📚 Learn More
 
 * [Next.js Documentation](https://nextjs.org/docs)
 * [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 * [TypeScript Documentation](https://www.typescriptlang.org/docs/)
-
-```
-```
