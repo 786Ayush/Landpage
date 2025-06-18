@@ -2,6 +2,8 @@ import { FaAngleDown, FaArrowRight } from "react-icons/fa";
 import { cards1, cards2 } from "./UIdata";
 import FAQ from "./Faq";
 import RaiseRequest from "./RaiseRequest";
+import Animation from "./Animation";
+import AnimationCards from "./AnimationCards";
 export const Hero = () => {
   return (
     <>
@@ -79,75 +81,7 @@ export const Hero = () => {
       <div className="relative">
         <div className="absolute bg-gradient-to-b from-[rgba(255,255,255,0)] to-[#FFFFFF] top-[-20px] w-full h-[20px]"></div>
       </div>
-
-      <div className="my-20">
-        <div className=" ml-20 bg-[#ffffff99] border border-[#d4d4d4] shadow-[0px_4px_25px_0px_#00000026] relative">
-          <div className="lg:flex">
-            <div className="w-full lg:w-1/2 p-4 sm:p-6 lg:p-8 flex flex-col gap-4">
-              {/* Small Heading */}
-              <div className="font-sans font-semibold text-[16px] sm:text-[18px] xl:text-[26px] 2xl:text-[28px] lg:text-[24px] leading-[100%] tracking-[-0.04em] text-[#0546D2]">
-                Lorem ipsum dolor sit
-              </div>
-
-              {/* Main Heading */}
-              <div className="font-sans font-bold text-[26px] sm:text-[32px] md:text-[36px] xl:text-[48px] 2xl:text-[56px] lg:text-[42px] leading-[100%] tracking-[-0.02em] uppercase text-[#222222] w-full lg:w-1/2">
-                Lorem ipsum dolor sit amet
-              </div>
-
-              {/* Paragraph Text */}
-              <div className="font-sans font-normal text-[14px] sm:text-[16px] xl:text-[20px] 2xl:text-[22px] lg:text-[18px] leading-[22px] sm:leading-[24px] xl:leading-[28px] 2xl:leading-[30px] tracking-normal">
-                Lorem ipsum dolor sit amet consectetur. Amet sodales sociis
-                facilisis donec dui. Mi porttitor ut aliquam mattis maecenas
-                eget integer in nam. Non nisl iaculis at felis aliquet.
-                Hendrerit tellus at purus lectus.
-              </div>
-
-              {/* Cards */}
-              <div>
-                {cards1.map((card) => (
-                  <div
-                    key={card.id}
-                    className="flex items-center gap-3 sm:gap-4 p-2 sm:p-3 lg:p-4"
-                  >
-                    <img
-                      src={card.img}
-                      alt={card.title}
-                      className="w-[80px] sm:w-[100px] md:w-[120px] xl:w-[150px] 2xl:w-[160px] lg:w-[140px] h-auto object-cover"
-                    />
-                    <div className="font-sans font-normal text-[14px] sm:text-[16px] xl:text-[20px] 2xl:text-[22px] lg:text-[18px] leading-[22px] sm:leading-[25px] tracking-normal">
-                      {card.title}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Button + Contact */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                <button className="bg-[#1959AC] shadow-[0px_4px_20px_0px_#00000026] text-white px-4 py-2 rounded flex items-center gap-2 text-sm sm:text-base xl:text-lg 2xl:text-xl lg:text-base">
-                  Lorem ipsum <FaArrowRight />
-                </button>
-                <div className="flex items-center gap-2">
-                  <img src="/Phone.svg" alt="Phone" />
-                  <span className="font-sans font-semibold text-[12px] sm:text-[14px] xl:text-[16px] 2xl:text-[18px] lg:text-[15px] text-[#043898]">
-                    123456789
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full lg:w-1/2 py-16 px-8">
-              <img
-                src="/card4.png"
-                alt="Card Image"
-                className="w-full h-full object-cover "
-              />
-            </div>
-          </div>
-          <div className="">
-            <div className="bg-[linear-gradient(90deg,_#043898_0%,_#079902_45.96%,_#170041_91.18%)] w-[70%] h-[20px] bottom-0 absolute"></div>
-          </div>
-        </div>
-      </div>
+      <Animation />
       <div className="my-40">
         <div className="ml-20 relative">
           <div className="lg:flex pb-20">
@@ -284,54 +218,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="py-40 relative ">
-        <div
-          className="absolute w-full h-full bg-cover bg-center    z-10"
-          style={{ backgroundImage: "url('/cardbg.svg')" }}
-        ></div>
-        <div className="lg:max-w-[50%] p-10">
-          <div className="font-sans font-semibold text-[24px] leading-[100%] tracking-[-0.04em] text-[#0546D2]">
-            Lorem ipsum dolor sit amet
-          </div>
-          <div className="font-sans font-bold text-[42px] leading-[100%] tracking-[-0.02em] uppercase text-[#222222] w-4/5">
-            Lorem ipsum dolor sit
-          </div>
-          <div className="font-sans font-normal text-[18px] leading-[25px] tracking-normal">
-            Lorem ipsum dolor sit amet consectetur. Mauris ullamcorper etiam leo
-            eleifend condimentum in vitae faucibus. Amet massa malesuada sit
-            pretium. Donec pharetra erat lacus suspendisse ornare.
-          </div>
-        </div>
-        <div className="flex flex-wrap gap-20 justify-center">
-          {[...Array(4)].map((_, i) => (
-            <div
-              key={i}
-              className="border border-[#F1F0F0] rounded-2xl shadow-md p-6 bg-white max-w-md space-y-4 z-100"
-            >
-              <img
-                src={`cardbox${i + 1}.png`}
-                alt="Card Image"
-                className="w-[440px] h-[205px] rounded-xl object-cover"
-              />
-
-              <div className="font-sans font-semibold text-[20px] leading-tight tracking-[-0.02em] text-gray-800">
-                Lorem ipsum dolor sit amet consectetur.
-              </div>
-
-              <div className="font-sans text-[16px] text-gray-600 leading-[25px]">
-                Lorem ipsum dolor sit amet consectetur. Nunc gravida consequat
-                faucibus cursus nisi. Nunc montes molestie a vitae vulputate.
-                Phasellus in pulvinar et vitae. Mi eget lectus nec et. Libero
-                iaculis diam nam mauris a eget. Quam nibh rhoncus rhoncus enim
-                venenatis bibendum.
-              </div>
-              <div className="text-[#0546D2] underline font-sans font-semibold text-[16px] leading-[100%] tracking-[-0.04em]">
-                Learn More
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <AnimationCards />
       <div
         className="relative w-full lg:h-screen bg-cover bg-center p-8 "
         style={{ backgroundImage: "url('/bg2.png')" }}
@@ -767,13 +654,13 @@ export const Hero = () => {
           </div>
 
           {/* Heading Row */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-6 gap-x-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-6 gap-x-4 ">
             {Array(4)
               .fill(0)
               .map((_, i) => (
                 <div
                   key={`heading-${i}`}
-                  className="font-figtree font-bold text-[18px] sm:text-[20px] leading-[23px] tracking-[-0.04em]"
+                  className="font-figtree font-bold text-[18px] sm:text-[20px] leading-[23px] tracking-[-0.04em] text-center"
                 >
                   Lorem Ipsum
                 </div>
@@ -786,7 +673,7 @@ export const Hero = () => {
             .map((_, rowIdx) => (
               <div
                 key={`row-${rowIdx}`}
-                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-4 gap-x-4"
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-4 gap-x-4 text-center"
               >
                 {Array(4)
                   .fill(0)
